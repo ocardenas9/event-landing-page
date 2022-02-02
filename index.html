@@ -13,13 +13,14 @@
       crossorigin="anonymous"
     />
 
-    <title>Collaboration Practice</title>
+    <title>Event Landing</title>
   </head>
   <body>
-    <!--NAVBAR-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Collaboration Practice </a>
+    <div class="container-fluid">
+      <!--NAVBAR-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Event Landing Page </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -31,72 +32,58 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+              <a class="nav-link active" aria-current="page" href="#speakers"
+                >Speakers</a
               >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#tickets">Tickets</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#venue">Venue</a>
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
 
-    <!--COLUMNS-->
-    <div class="container">
       <!--JUMBOTRON-->
       <div class="row">
-        <div class="col m-3 p-5 bg-light round-3">
-          <h1 class="display-4 fs-bold">Custom Jumbotron</h1>
-          <p class="fs-4">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex
-            voluptatum illo debitis distinctio mollitia quis omnis dicta. Quis
-            eum libero magnam ea placeat, fuga totam facere est deleniti. Neque,
-            numquam.
+        <div class="col p-4 mb-5 text-center" style="background-img: url('img/mountains-bg.png')">
+          <h1 class="display-4 fs-bold">
+            Clear Statement About <br />
+            Your Event
+          </h1>
+          <p class="fs-4 text-muted">
+            Secondary header providing additional information.
           </p>
           <button class="btn btn-primary btn-lg">Example Button</button>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-8" style="background-color: khaki">Column</div>
-        <div class="col-md-4" style="background-color: plum; color: navy">
+    </div>
+    <!--SECTION-->
+    <div class="container">
+      <div class="row" role="contentinfo">
+        <div class="col"></div>
+        
           Column
         </div>
       </div>
-    </div>
 
-    <!--FOOTER-->
-    <footer>
-      <div class="container">
+      <!--FOOTER-->
+      <footer>
         <div class="row">
           <div class="col" style="background-color: navy; color: #ffffff">
             Footer
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <!-- JavaScript: Bootstrap Bundle with Popper -->
     <script
