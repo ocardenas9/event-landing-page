@@ -37,16 +37,16 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#speakers"
-                >Speakers</a
+                ><strong>Speakers</strong></a
               >
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#tickets">Tickets</a>
+              <a class="nav-link" href="#tickets"><strong>Tickets</strong></a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#venue">Venue</a>
+              <a class="nav-link" href="#venue"><strong>Venue</strong></a>
             </li>
           </ul>
         </div>
@@ -54,7 +54,10 @@
 
       <!--JUMBOTRON-->
       <div class="row">
-        <div class="col p-4 mb-5 text-center" style="background-img: url('img/mountains-bg.png')">
+        <div
+          class="col p-4 mb-5 text-center"
+          style="background: url('img/mountains-bg.png')"
+        >
           <h1 class="display-4 fs-bold">
             Clear Statement About <br />
             Your Event
@@ -62,18 +65,81 @@
           <p class="fs-4 text-muted">
             Secondary header providing additional information.
           </p>
-          <button class="btn btn-primary btn-lg">Example Button</button>
+          <button class="btn btn-primary btn-lg" href="#tickets">
+            Get The Ticket
+          </button>
         </div>
       </div>
     </div>
-    <!--SECTION-->
+
+    <!--SPEAKERS HEADER-->
     <div class="container">
       <div class="row" role="contentinfo">
         <div class="col"></div>
-        
-          Column
+        <div class="col">
+          <h1 class="text-center">The Speakers</h1>
+          <p style="font-weight: bold; text-align: center">
+            Write a few lines about the event speakers to highlight their
+            expertise in the field.
+          </p>
+          <br /><br />
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <!--SPEAKER PHOTOS-->
+      <div class="row">
+        <!--1-->
+        <div class="col">
+          <img src="img/mountains-bg.png" class="mw-100 rounded-3" />
+          <h3>Ruby Jennings</h3>
+          <p>Product Manager at Moqups. Runner, parent, coffee lover.</p>
+          <p>@username</p>
+        </div>
+
+        <!--2-->
+        <div class="col">
+          <img src="img/mountains-bg.png" class="mw-100 rounded-3" />
+          <h3>Leon Hansen</h3>
+          <p>Sales Manager at Moqups. Runner, parent, coffee lover.</p>
+          <p>@username</p>
+        </div>
+
+        <!--3-->
+        <div class="col">
+          <img src="img/mountains-bg.png" class="mw-100 rounded-3" />
+          <h3>Meghan Stone</h3>
+          <p>Marketing Specialist at Moqups. Runner, parent, coffee lover.</p>
+          <p>@username</p>
+        </div>
+
+        <!--4-->
+        <div class="col">
+          <img src="img/mountains-bg.png" class="mw-100 rounded-3" />
+          <h3>Willie Perkins</h3>
+          <p>UX Engineer at Moqups. Runner, parent, coffee lover.</p>
+          <p>@username</p>
         </div>
       </div>
+
+      <!--GET TICKETS!-->
+      <div class="row">
+        <div
+          class="col p-4 mb-5 text-center"
+          style="background: url('img/mountains-bg.png')"
+        >
+          <h1 class="display-4 fs-bold">
+            Get Your Ticket Today!
+          </h1>
+          <p class="fs-4 text-muted">
+            Each ticket includes: <strong>20</strong> speakers, <strong>100</strong> participants, <strong>15</strong> sessions, <strong>5</strong> keynotes.
+          </p>
+          <button class="btn btn-primary btn-lg" href="#tickets">
+            <p class="text-uppercase">Buy Ticket $149</p>
+          </button>
+        </div>
+      </div>
+    </div>
 
       <!--FOOTER-->
       <footer>
