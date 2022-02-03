@@ -13,13 +13,17 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="CSS/styles.css" />
+
     <title>Event Landing</title>
   </head>
   <body>
     <div class="container-fluid">
       <!--NAVBAR-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Event Landing Page </a>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#" justify-content-start
+          >Event Landing Page
+        </a>
 
         <button
           class="navbar-toggler"
@@ -34,7 +38,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#speakers"
                 ><strong>Speakers</strong></a
@@ -53,11 +57,8 @@
       </nav>
 
       <!--JUMBOTRON-->
-      <div class="row">
-        <div
-          class="col p-4 mb-5 text-center"
-          style="background: url('img/mountains-bg.png')"
-        >
+      <div class="row" id="jumbotron">
+        <div class="col p-4 mb-5 text-center">
           <h1 class="display-4 fs-bold">
             Clear Statement About <br />
             Your Event
@@ -65,8 +66,8 @@
           <p class="fs-4 text-muted">
             Secondary header providing additional information.
           </p>
-          <button class="btn btn-dark btn-lg" href="#tickets">
-            <p class="text-uppercase">Get The Ticket</p>
+          <button class="btn btn-dark btn-lg pt-4 px-5" href="#tickets">
+            <p class="text-uppercase text-bold">Get The Ticket</p>
           </button>
         </div>
       </div>
@@ -76,48 +77,47 @@
     <!--SPEAKERS HEADER-->
     <div class="container">
       <div class="row" role="contentinfo">
-        <div class="col"></div>
         <div class="col">
-          <h1 class="text-center">The Speakers</h1>
-          <p style="font-weight: bold; text-align: center">
+          <h1 class="display-3 text-center">The Speakers</h1>
+          <!--<p style="font-weight: bold; text-align: center; color: cococo">-->
+          <p class="text-center text muted">
             Write a few lines about the event speakers to highlight their
             expertise in the field.
           </p>
           <br /><br />
         </div>
-        <div class="col"></div>
       </div>
 
       <!--SPEAKER PHOTOS-->
-      <div class="row">
-        <!--1-->
-        <div class="col">
+      <div class="row mb-4">
+        <!--PICTURE 1-->
+        <div class="col-md-3 px-4">
           <img src="img/mountains-bg.png" class="mw-100 rounded-3" />
-          <h3>Ruby Jennings</h3>
+          <h3 class="py-4">Ruby Jennings</h3>
           <p>Product Manager at Moqups. Runner, parent, coffee lover.</p>
           <p>@username</p>
         </div>
 
-        <!--2-->
-        <div class="col">
+        <!--PICTURE 2-->
+        <div class="col-md-3 px-4">
           <img src="img/mountains-bg.png" class="mw-100 rounded-3" />
-          <h3>Leon Hansen</h3>
+          <h3 class="py-4">Leon Hansen</h3>
           <p>Sales Manager at Moqups. Runner, parent, coffee lover.</p>
           <p>@username</p>
         </div>
 
-        <!--3-->
-        <div class="col">
+        <!--PICTURE 3-->
+        <div class="col-md-3 px-4">
           <img src="img/mountains-bg.png" class="mw-100 rounded-3" />
-          <h3>Meghan Stone</h3>
+          <h3 class="py-4">Meghan Stone</h3>
           <p>Marketing Specialist at Moqups. Runner, parent, coffee lover.</p>
           <p>@username</p>
         </div>
 
-        <!--4-->
-        <div class="col">
+        <!--PICTURE 4-->
+        <div class="col-md-3 px-4">
           <img src="img/mountains-bg.png" class="mw-100 rounded-3" />
-          <h3>Willie Perkins</h3>
+          <h3 class="py-4">Willie Perkins</h3>
           <p>UX Engineer at Moqups. Runner, parent, coffee lover.</p>
           <p>@username</p>
         </div>
@@ -125,54 +125,50 @@
 
       <!--GET TICKETS!-->
       <div class="row">
-        <div
-          class="col p-4 mb-5 text-center"
-          style="background: url('img/mountains-bg.png')"
-        >
+        <div class="col p-4 mb-5 text-center">
           <h1 class="display-4 fs-bold">Get Your Ticket Today!</h1>
           <p class="fs-4 text-muted">
             Each ticket includes: <strong>20</strong> speakers,
             <strong>100</strong> participants, <strong>15</strong> sessions,
             <strong>5</strong> keynotes.
           </p>
-          <button class="btn btn-dark btn-lg" href="#tickets">
+          <button class="btn btn-dark btn-lg pt-4 px-5" href="#tickets">
             <p class="text-uppercase">Buy Ticket $149</p>
           </button>
         </div>
       </div>
 
       <!--THE VENUE-->
-      <div class="row row-cols-2">
-        <div class="col">
-          <div class="col">
-            <h1 class="">The Venue</h1>
-            <p>
-              Our event will be held at
-              <strong
-                >Bitwise South Stadium at 700 Van Ness Avenue, Fresno, CA.
-                93721</strong
-              >
-            </p>
-            <p>
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d799.4022451776136!2d-119.78626410078826!3d36.731951152941384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise%20South%20Stadium!5e0!3m2!1sen!2sus!4v1643690608630!5m2!1sen!2sus"
-                width="100%"
-                height="300"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-              ></iframe>
-            </p>
-          </div>
+      <div class="row mb-4">
+        <div class="col-md-6">
+          <h1 class="">The Venue</h1>
+          <p>
+            Our event will be held at
+            <strong
+              >Bitwise South Stadium at 700 Van Ness Avenue, Fresno, CA.
+              93721</strong
+            >
+          </p>
+          <p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d799.4022451776136!2d-119.78626410078826!3d36.731951152941384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80945e26d4340503%3A0xb32dda71cf0730a0!2sBitwise%20South%20Stadium!5e0!3m2!1sen!2sus!4v1643690608630!5m2!1sen!2sus"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </p>
         </div>
-        <div class="col">
-          <p><img src="img/mountains-bg.png" /></p>
+
+        <div class="col-md-6 mt-5">
+          <img src="img/mountains-bg.png" width="100%" />
         </div>
       </div>
 
       <!--FOOTER-->
       <footer>
-        <div class="row bg-light">
+        <div class="row bg-light bt-light">
           <div class="col">
             <ul class="list-inline">
               <li class="list-inline-item">
@@ -222,7 +218,6 @@
               </li>
             </ul>
           </div>
-          <div class="col"></div>
         </div>
       </footer>
       <!--end of container 2 of 2-->
